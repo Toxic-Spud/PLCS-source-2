@@ -1,0 +1,21 @@
+{
+  "@timestamp": {
+    "$resolver": "timestamp",
+    "pattern": {
+      "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+      "timeZone": "UCT"
+    }
+  },
+  "log.level": {
+    "$resolver": "level",
+    "field": "name"
+  },
+  "information": {
+    "$resolver": "message",
+    "stringified": true
+  },
+  "log.logger": {
+    "$resolver": "logger",
+    "field": "name"
+  }
+}
